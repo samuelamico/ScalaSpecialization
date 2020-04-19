@@ -1,0 +1,27 @@
+[debug] javaOptions: Vector()
+[debug] Forking tests - parallelism = false
+[debug] Create a single-thread test executor
+[debug] Runner for com.novocode.junit.JUnitFramework produced 1 initial tasks for 1 tests.
+[debug]   Running TaskDef(example.ListsSuite, sbt.ForkMain$AnnotatedFingerscan@497b738e, false, [SuiteSelector])
+[info] Test run started
+[info] Test example.ListsSuite.one plus one is three (0pts)? started
+[debug] Test example.ListsSuite.one plus one is three (0pts)? finished, took 0.203 sec
+[info] Test example.ListsSuite.max of a few numbers (10pts) started
+[debug] Test example.ListsSuite.max of a few numbers (10pts) finished, took 0.078 sec
+[info] Test example.ListsSuite.intNotZero throws an exception if its argument is 0 started
+[debug] Test example.ListsSuite.intNotZero throws an exception if its argument is 0 finished, took 0.0 sec
+[info] Test example.ListsSuite.details why one plus one is not three (0pts) started
+[error] Test example.ListsSuite.details why one plus one is not three (0pts) failed: java.lang.AssertionError: expected:<3> but was:<2>, took 0.0 sec
+[error]     at example.ListsSuite.details why one plus one is not three (0pts)(ListsSuite.scala:53)
+[error]     ...
+[debug] Test example.ListsSuite.details why one plus one is not three (0pts) finished, took 0.0 sec
+[info] Test example.ListsSuite.sum of a few numbers (10pts) started
+[debug] Test example.ListsSuite.sum of a few numbers (10pts) finished, took 0.0 sec
+[info] Test example.ListsSuite.one plus one is two (0pts) started
+[debug] Test example.ListsSuite.one plus one is two (0pts) finished, took 0.0 sec
+[info] Test run finished: 1 failed, 0 ignored, 6 total, 0.387s
+[debug]     Produced 0 nested tasks and 6 events.
+[debug] Summary for JUnit not available.
+[error] Failed: Total 6, Failed 1, Errors 0, Passed 5
+[error] Failed tests:
+[error] 	example.ListsSuite
