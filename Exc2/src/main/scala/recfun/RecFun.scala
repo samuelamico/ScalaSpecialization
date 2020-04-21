@@ -40,8 +40,6 @@ object RecFun extends RecFunInterface {
    * Exercise 2
    */
   def balance(chars: List[Char]): Boolean = {
-    var co = 0
-    var cc = 0
 
     def check_parenthese(c_open: Int, c_close: Int, x: List[Char]): Boolean = {
       if (x.isEmpty) {
@@ -59,11 +57,53 @@ object RecFun extends RecFunInterface {
         }
       }
     }
-    check_parenthese(co,cc,chars)
+    check_parenthese(0,0,chars)
   }
 
   /**
    * Exercise 3
    */
-  def countChange(money: Int, coins: List[Int]): Int = ???
+  def countChange(money: Int, coins: List[Int]): Int = {
+
+    def contido(cont: Int, lista: List[Int]): Boolean = {
+      if(lista.isEmpty){
+        false
+      }
+      else{
+        if (cont == lista.head || (cont%lista.head == 0)) true
+        else contido(cont,lista.tail)
+      }
+    }
+    def resto( header: Int, contador: Int, x: List[Int]): Int = {
+      if (x.isEmpty) contador
+      else{
+        if(header == x.head){
+          if(money%(x.head) == 0){
+            resto(header,contador+1,x.tail)
+          }
+          else if(contido(money%(x.head),coins)){
+            resto(header,contador+1,x.tail)
+          }
+          else resto(header,contador,x.tail)
+        }
+        else{
+          if(money%(x.head) == 0){
+            resto(header,contador+1,x.tail)
+          }
+          else if(contido(money%(x.head),coins)){
+            resto(header,contador+1,x.tail)
+          }
+          else resto(header,contador,x.tail)
+        }
+      }
+    }
+
+    def recursionChange(c: Int , coins_temp: List[Int]): Int = {
+      if (coins_temp.isEmpty) c
+      else recursionChange(resto(coins_temp.head,c,coins_temp),coins_temp.tail)
+    }
+
+
+    recursionChange(0,coins)
+  }
 }

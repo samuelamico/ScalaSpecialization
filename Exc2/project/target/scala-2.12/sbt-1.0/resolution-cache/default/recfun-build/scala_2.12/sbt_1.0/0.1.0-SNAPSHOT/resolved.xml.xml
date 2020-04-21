@@ -4,7 +4,7 @@
 		module="recfun-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20200418204431"
+		publication="20200419134053"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

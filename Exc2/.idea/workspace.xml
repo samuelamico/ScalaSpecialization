@@ -35,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RecFunSuite">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="progfun1-recfun" />
@@ -43,8 +43,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RecFunSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="progfun1-recfun" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="recfun.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="recfun" />
+      <option name="MAIN_CLASS_NAME" value="recfun.RecFunSuite" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecFunSuite" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -113,21 +129,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587259503726" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1587305942563">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1587324162192">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587305942563" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1587305942562">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587324162192" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1587324162192">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587305942562" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1587305942562">
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587324162192" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1587324162192">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587305942562" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1587305942563">
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587324162192" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1587324162192">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587305942563" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587324162192" />
   </component>
 </project>

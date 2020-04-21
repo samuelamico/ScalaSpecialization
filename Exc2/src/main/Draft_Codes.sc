@@ -23,6 +23,7 @@ row_tri(x,vector)
 
  */
 
+/*
 // Parentheses Balancing
 var k = "() )(".toList
 
@@ -50,7 +51,7 @@ def check_parenthese(c_open: Int, c_close: Int, x: List[Char]): Boolean = {
 check_parenthese(co,cc,k)
 
 
- /*
+
 
 
 def check(x: List[Char]): Unit = {
@@ -66,3 +67,38 @@ def check(x: List[Char]): Unit = {
 check(k)
 
  */
+
+// Money change
+def contido(cont: Int, lista: List[Int]): Boolean = {
+  if(lista.isEmpty){
+    false
+  }
+  else{
+    if (cont == lista.head) true
+    else contido(cont,lista.tail)
+  }
+}
+
+
+def resto(money: Int, contador: Int, x: List[Int], coins: List[Int]): Int = {
+  if (x.isEmpty) contador
+  else{
+    var rest = money%x.head
+    if(rest == 0){
+        resto(money,contador+1,x.tail,coins)
+    }
+    else if(contido(rest,coins)){
+      resto(money,contador+1,x.tail,coins)
+    }
+    else resto(money,contador,x.tail,coins)
+  }
+}
+
+
+def recursionChange(c: Int ,money: Int, coins: List[Int]): Int = {
+  if (coins.isEmpty) c
+  recursionChange(resto(money,c,coins,coins),money,coins.tail)
+}
+var contador = 0
+
+recursionChange(contador,301,List(5,10,20,50,100,200,500))
