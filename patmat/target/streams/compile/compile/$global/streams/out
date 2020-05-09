@@ -1,0 +1,5 @@
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\samfs\Desktop\Scala\Coursera-Specialization\PrincipleScala-Curso1\patmat\src\main\scala\patmat\Huffman.scala:169:128: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: Nil[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def until(done: List[CodeTree] => Boolean, merge: List[CodeTree] => List[CodeTree])(trees: List[CodeTree]): List[CodeTree] = trees match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                                                               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
